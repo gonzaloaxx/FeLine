@@ -13,9 +13,9 @@
 ```
 export GEMINI_API_KEY="SerialStringHere"
 export FELINE_ENV="$HOME/FeLine/.venv/bin"
-export FELINE_PY="$HOME/Git/FeLine/feline.py"
+export FELINE_PY="$HOME/FeLine/feline.py"
 
-alias feline="$HOME/Git/FeLine/wrapper.sh"
+alias feline="$HOME/FeLine/wrapper.sh"
 ```
 - Refresh file `source ~/.bashrc`
 - Run feline app like: `feline Hello! This is a feline test.`
