@@ -11,10 +11,9 @@ if __name__ == '__main__':
 
     if args.message:
         genai = Genai()
-        text = ' '.join(args.message)
-        
+
         if args.images:
-            # Image and text recognition
+            #Image and text recognition
             contents = [ImageParser.get_image(x) for x in args.images]
             contents.insert(0, text)
 
@@ -23,11 +22,10 @@ if __name__ == '__main__':
         
         else:
             # Text recognition
-            contents = [text]
-
             model = 'gemini-2.0-flash'
-            response = genai.get_response(model, *contents)
+            response = genai.get_response(model, args.message)
     else:
+        # exit with help
         parser.print_help()
 
     print('\n' + response.text)

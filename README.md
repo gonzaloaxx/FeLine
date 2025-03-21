@@ -2,7 +2,7 @@
 
 ### Install
 - Clone the repository `git git@github.com:gonzaloaxx/FeLine.git`
-- Get your API key on the Google Studio platform [site][https://aistudio.google.com/app/apikey]
+- Get your API key on the Google Studio platform [aistudio](https://aistudio.google.com/app/apikey)
 
 - Make your virtual enviroment with python on FeLine folder
 `python3 -m pip install virtualenv && python3 -m virtualenv .venv`
@@ -18,5 +18,5 @@ export FELINE_PY="$HOME/FeLine/feline.py"
 alias feline="$HOME/FeLine/wrapper.sh"
 ```
 - Refresh file `source ~/.bashrc`
-- Run feline app like: `feline Hello! This is a feline test.`
+- Run feline app like: `feline -m "Hello! This is a feline test."`
 
